@@ -1,14 +1,14 @@
+use raylib::drawing::{RaylibDraw, RaylibDrawHandle};
+
 enum ShapeType {
     Square(i32),
     Rect(i32, i32),
     Circle(f32),
 }
 
-impl ShapeType {
-    fn draw(&self, d:raylib::draw::RaylibDrawHandle) {
-        match self {
-            Square(l) => d.RaylibDrawHandle()
-        }
+fn draw(shape:ShapeType, color: raylib::color::Color, d:RaylibDrawHandle) {
+    match shape {
+        Square(l) => d.draw_rectangle(x, y, width, height, color),
     }
 }
 
