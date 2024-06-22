@@ -1,7 +1,7 @@
 use rand::rngs::ThreadRng;
 use raylib::prelude::*;
 use raylib::consts::MouseButton;
-use std::{cmp, collections::{VecDeque}, f32};
+use std::{collections::VecDeque, f32};
 use rand::{thread_rng, Rng};
 use std::ptr::eq;
 
